@@ -16,3 +16,8 @@ for x in a
 {
     print(x)
 }
+
+a.append(110)
+
+print(a[10])
+
