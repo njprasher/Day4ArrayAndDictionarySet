@@ -30,3 +30,11 @@ print("----------")
 
 print(a.capacity)
 print(a.count)
+
+if a.isEmpty
+{
+    print("Array is Empty")
+}else{
+    print("Array contains some elements")
+}
+
