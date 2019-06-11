@@ -54,25 +54,42 @@ if var c = country
 
 //print("No. Of Contries : \(country.count)")
 
-func sortArray(arr: [Int] ) -> [Int]
+//func sortArray(arr: [Int] ) -> [Int]
+//{
+//    var sortedArray: [Int] = []
+//
+//    for i in arr
+//    {
+//        var j=i+1
+//
+//        for j in arr
+//        {
+//            if ( arr[i+1] < arr[i] )
+//            {
+//                var a = arr[i]
+//                arr[i] = arr[j]
+//                arr[j] = a
+//            }
+//        }
+//    }
+//
+//    sortedArray = arr
+//    return sortedArray
+//}
+
+func printN(n: Int)
 {
-    var sortedArray: [Int] = []
-    
-    for i in arr
+    if (n == 0)
     {
-        var j=i+1
-        
-        for j in arr
-        {
-            if ( arr[i+1] < arr[i] )
-            {
-                var a = arr[i]
-                arr[i] = arr[j]
-                arr[j] = a
-            }
-        }
+        return
     }
-    
-    sortedArray = arr
-    return sortedArray
+    else
+    {
+        printN(n: n - 1)
+        print(n)
+    }
 }
+
+printN(n: 10)
+
+
