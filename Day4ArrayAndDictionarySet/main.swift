@@ -38,8 +38,41 @@ if a.isEmpty
     print("Array contains some elements")
 }
 
-var b:[String] = []
+let otherCountries = ["Pak", "Russia", "UK"]
 
-b.append("India")
-b.append("Canada")
-b.append("USA")
+var country:[String]!
+
+//country += otherCountries
+
+if var c = country
+{
+    country.append("India")
+    c.append("Canada")
+    c.append("USA")
+    print("No. of Countries : \(c.count)")
+}else{print("not gone to if")}
+
+//print("No. Of Contries : \(country.count)")
+
+func sortArray(arr: [Int] ) -> [Int]
+{
+    var sortedArray: [Int] = []
+    
+    for i in arr
+    {
+        var j=i+1
+        
+        for j in arr
+        {
+            if ( arr[i+1] < arr[i] )
+            {
+                var a = arr[i]
+                arr[i] = arr[j]
+                arr[j] = a
+            }
+        }
+    }
+    
+    sortedArray = arr
+    return sortedArray
+}
