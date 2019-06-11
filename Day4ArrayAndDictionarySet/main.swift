@@ -40,17 +40,14 @@ if a.isEmpty
 
 let otherCountries = ["Pak", "Russia", "UK"]
 
-var country:[String]!
+var country:[String] = []
 
-//country += otherCountries
+country += otherCountries
 
-if var c = country
-{
     country.append("India")
-    c.append("Canada")
-    c.append("USA")
-    print("No. of Countries : \(c.count)")
-}else{print("not gone to if")}
+    country.append("Canada")
+    country.append("USA")
+    print("No. of Countries : \(country.count)")
 
 //print("No. Of Contries : \(country.count)")
 
@@ -90,7 +87,7 @@ func printN(n: Int)
     }
 }
 
-print("****************")
+print("********PrintN********")
 
 printN(n: 10)
 
@@ -105,6 +102,29 @@ func sumN(n: Int) -> Int {
     }
 }
 
-print("****************")
+print("********SUM*********")
 
 print("Sum : \(sumN(n: 10))")
+
+func printTheReversedArray(arr: [String], index: Int)
+{
+    if arr.isEmpty {
+        return
+    }
+    else
+    {
+        if index == -1
+        {
+            return
+        }
+        else
+        {
+            print(arr[index])
+            printTheReversedArray(arr: arr, index: index - 1)
+        }
+    }
+}
+
+print("********ArrayReverse*********")
+
+printTheReversedArray(arr: country, index: country.count - 1)
