@@ -21,3 +21,12 @@ a.append(110)
 
 print(a[10])
 
+for x in a
+{
+    print(x)
+}
+
+print("----------")
+
+print(a.capacity)
+print(a.count)
