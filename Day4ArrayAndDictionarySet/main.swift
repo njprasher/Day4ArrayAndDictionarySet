@@ -38,3 +38,8 @@ if a.isEmpty
     print("Array contains some elements")
 }
 
+var b:[String] = []
+
+b.append("India")
+b.append("Canada")
+b.append("USA")
