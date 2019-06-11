@@ -90,6 +90,21 @@ func printN(n: Int)
     }
 }
 
+print("****************")
+
 printN(n: 10)
 
+func sumN(n: Int) -> Int {
+    if (n == 0)
+    {
+       return 0
+    }
+    else
+    {
+        return n + sumN(n: n - 1)
+    }
+}
 
+print("****************")
+
+print("Sum : \(sumN(n: 10))")
