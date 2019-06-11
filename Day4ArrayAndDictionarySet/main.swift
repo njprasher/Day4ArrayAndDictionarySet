@@ -8,5 +8,11 @@
 
 import Foundation
 
-print("Hello, World!")
+var a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 
+//print(a[1])
+
+for x in a
+{
+    print(x)
+}
