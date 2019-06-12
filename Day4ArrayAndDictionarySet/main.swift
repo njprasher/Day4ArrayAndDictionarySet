@@ -175,3 +175,23 @@ print(mySet)
 mySet.insert("Russia")
 
 print(mySet)
+
+var mySet2 = Set<String>()
+mySet2.insert("India")
+mySet2.insert("Pakistan")
+mySet2.insert("Nepal")
+
+let interSet = mySet.intersection(mySet2)
+print(interSet)
+
+let unionSet = mySet.union(mySet2)
+print(unionSet)
+
+let isDisjoinSet = mySet.isDisjoint(with: mySet2)
+print(isDisjoinSet)
+
+let minusSet = mySet.subtracting(mySet2)
+print(minusSet)
+
+let symmetricDifferenceSet = mySet.symmetricDifference(mySet2)
+print(symmetricDifferenceSet)
