@@ -171,3 +171,7 @@ mySet.insert("Canada")
 mySet.insert("India")
 
 print(mySet)
+
+mySet.insert("Russia")
+
+print(mySet)
