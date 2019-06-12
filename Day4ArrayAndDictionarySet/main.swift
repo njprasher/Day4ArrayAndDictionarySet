@@ -42,7 +42,7 @@ let otherCountries = ["Pak", "Russia", "UK"]
 
 var country:[String] = []
 
-country += otherCountries
+    country += otherCountries
 
     country.append("India")
     country.append("Canada")
@@ -87,7 +87,7 @@ func printN(n: Int)
     }
 }
 
-print("********PrintN********")
+print("******** PrintN ********")
 
 printN(n: 10)
 
@@ -102,13 +102,14 @@ func sumN(n: Int) -> Int {
     }
 }
 
-print("********SUM*********")
+print("******** SUM *********")
 
 print("Sum : \(sumN(n: 10))")
 
 func printTheReversedArray(arr: [String], index: Int)
 {
-    if arr.isEmpty {
+    if arr.isEmpty
+    {
         return
     }
     else
@@ -125,6 +126,21 @@ func printTheReversedArray(arr: [String], index: Int)
     }
 }
 
-print("********ArrayReverse*********")
+print("******** Array Reverse *********")
 
 printTheReversedArray(arr: country, index: country.count - 1)
+
+print("******** Dictionary *********")
+
+var countriesExample = [Int: String]()
+
+var countryDictionary = ["key" : "value",
+                         "IND" : "India",
+                         "CAD" : "Canada",
+                         "USA" : "United States Of America"
+                        ]
+print(countryDictionary)
+print(countryDictionary["USA"] ?? "Key not Exist")
+print(countryDictionary["USA"]!)
+print(countryDictionary["PAK"] ?? "Key not Exist")
+
