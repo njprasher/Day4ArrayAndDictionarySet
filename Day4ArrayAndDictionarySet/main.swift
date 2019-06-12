@@ -160,3 +160,14 @@ for (_, v) in countryDictionary
 {
     print(v)
 }
+
+print("******** Set *********")
+
+var mySet = Set<String>()
+
+mySet.insert("India")
+mySet.insert("USA")
+mySet.insert("Canada")
+mySet.insert("India")
+
+print(mySet)
