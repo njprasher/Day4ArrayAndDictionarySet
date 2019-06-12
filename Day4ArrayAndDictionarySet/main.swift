@@ -144,3 +144,15 @@ print(countryDictionary["USA"] ?? "Key not Exist")
 print(countryDictionary["USA"]!)
 print(countryDictionary["PAK"] ?? "Key not Exist")
 
+if let c = countryDictionary["PAK"]
+{
+    print(c)
+}else {
+    print("Key not exist (from else)")
+    
+}
+
+for (_, v) in countryDictionary
+{
+    print(v)
+}
