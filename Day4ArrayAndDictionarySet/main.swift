@@ -152,6 +152,8 @@ if let c = countryDictionary["PAK"]
     
 }
 
+countryDictionary["Pak"] = "Pakistan"
+
 for (_, v) in countryDictionary
 {
     print(v)
