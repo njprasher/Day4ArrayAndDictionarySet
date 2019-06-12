@@ -195,3 +195,34 @@ print(minusSet)
 
 let symmetricDifferenceSet = mySet.symmetricDifference(mySet2)
 print(symmetricDifferenceSet)
+
+print("******** Dictionary of Any Type *********")
+
+var ss = Dictionary<String, Any>()
+
+ss["int"] = 100
+ss["string"] = "hello World"
+ss["dict"] =  ["k": "v", "keyo" : 100]
+ss["tuple"] = (100, 200)
+
+print(ss)
+
+for item in ss
+{
+    if item.value is Int
+    {
+        print("I am Integer : \(item)")
+    }
+    if item.value is String
+    {
+        print("I am String : \(item)")
+    }
+    if item.value is Dictionary<String,Any>
+    {
+        print("I am Dictionary : \(item)")
+    }
+    if item.value is (Int, Int)
+    {
+        print("I am Tuple : \(item)")
+    }
+}
